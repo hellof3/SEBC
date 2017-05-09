@@ -85,14 +85,12 @@ getent hosts
 </code></pre>
 
 <pre><code>
-getent hosts
-127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
-127.0.0.1       localhost localhost.localdomain localhost6 localhost6.localdomain6
-172.31.3.76     ip-172-31-3-76.cn-north-1.compute.internal hadoop1
-172.31.13.65    ip-172-31-13-65.cn-north-1.compute.internal hadoop2
-172.31.4.106    ip-172-31-4-106.cn-north-1.compute.internal hadoop3
-172.31.10.116   ip-172-31-10-116.cn-north-1.compute.internal hadoop4
-172.31.12.27    ip-172-31-12-27.cn-north-1.compute.interna hadoop5
+nslookup 172.31.3.76
+Server:		172.31.0.2
+Address:	172.31.0.2#53
+
+Non-authoritative answer:
+76.3.31.172.in-addr.arpa	name = ip-172-31-3-76.cn-north-1.compute.internal.
 </code></pre>
 
 ## 9. Install and check ntpd,nscd
